@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import TodoItem from "./TodoItem";
+import TodoItem from "./components/TodoItem";
+import "./App.css";
 
 const ENTER_KEY = 13;
 
@@ -32,8 +33,8 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
-        <header className="header">
+      <div className="todoapp">
+        <header>
           <h1>todos</h1>
           <input
             className="new-todo"
